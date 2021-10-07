@@ -1,0 +1,28 @@
+{
+  "files": {
+    "src/blocks/discord/Channel/index.js": [
+      {
+        "id": "f769ea89-0c91-4ad1-a911-1139472dd018",
+        "line": 1,
+        "version": 13,
+        "index": 0
+      }
+    ],
+    "src/blocks/discord/channels/send_wait_reply.js": [
+      {
+        "id": "1f1989cf-69a2-4d6b-8e66-11058face881",
+        "line": 75,
+        "version": 1,
+        "index": 2612
+      }
+    ],
+    "src/locales/en-US.json": [
+      {
+        "id": "5cc5d647-1257-402b-8c45-7906ffa3b6f7",
+        "line": 507,
+        "version": 516,
+        "index": 23715
+      }
+    ]
+  }
+}

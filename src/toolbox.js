@@ -1,6 +1,7 @@
 export default (Blockly) => {
     return (`
     <xml xmlns="https://developers.google.com/blockly/xml" id="toolbox" style="display: none">
+            <category name="Useful" colour="#FFFF00">
         <category name="{{ TOOLBOX_LOGIC }}" colour="#5b80a5">
             <block type="controls_if" />
             <block type="logic_compare">
@@ -351,7 +352,7 @@ export default (Blockly) => {
                 <field name="DIRECTION">1</field>
             </block>
         </category>
-        <category name="{{ TOOLBOX_COLORS }}" colour="#a5745b">
+       <category name="{{ TOOLBOX_COLORS }}" colour="#a5745b">
             <block type="colour_picker">
                 <field name="COLOUR">#ff0000</field>
             </block>
@@ -391,7 +392,9 @@ export default (Blockly) => {
                 </value>
             </block>
         </category>
+        </category>
         <sep />
+                <category name="Others" colour="#FFFF00">
         <category name="{{ TOOLBOX_VARIABLES }}" colour="#a55b80" custom="VARIABLE" />
         <category name="{{ TOOLBOX_FUNCTIONS }}" colour="#995ba5" custom="PROCEDURE" />
         <category name="{{ TOOLBOX_OTHER }}" colour="#D14081"> 
@@ -408,6 +411,7 @@ export default (Blockly) => {
             <block type="s4d_try_and_catch"></block>
             <block type="s4d_return"></block>
             <block type="s4d_string_to_number"></block>
+        </category>
         </category>
         <sep />
         <category name="{{ TOOLBOX_BASE }}" colour="#F46580">
@@ -438,6 +442,7 @@ export default (Blockly) => {
             <block type="s4d_message_content"></block>
             <block type="s4d_message_id"></block>
             <block type="s4d_message_author"></block>
+<block type="s4d_message_member"></block>
             <block type="s4d_mentioned_member"></block>
             <block type="s4d_mentioned_channel"></block>
             <block type="s4d_mentioned_role"></block>
@@ -497,7 +502,9 @@ export default (Blockly) => {
             </block>
             <block type="s4d_reply_id"></block>
             <block type="s4d_message_embed"></block>
-        </category>
+        </category> 
+
+
         <category name="{{ EMBED }}" colour="#40BF4A">
         <label text="Create A Perfect Embed" web-class="boldtext"></label>
             <block type="s4d_create_embed_then"></block>
@@ -581,11 +588,7 @@ export default (Blockly) => {
             <block type="s4d_button_style"></block>
             <block type="s4d_button_row"></block>
             <block type="s4d_message_row_block"></block>
-        </category>
-        <category name="{{ TOOLBOX_BUTTONS }}" colour="#ff0019">
-        <label text="%{BKY_T_EDI}"></label>
-        <block type="on_button"></block>
-        <label text="%{BKY_T_BS}"></label>
+      <label text="%{BKY_T_BS}"></label>
         <block type="button_id"></block>
         <block type="button_author"></block>
         <block type="button_channel"></block>
@@ -635,7 +638,7 @@ export default (Blockly) => {
             <block type="s4d_button_menu"></block>
             <block type="s4d_message_menu_block"></block>
         </category>
-        <category name="MRREDO MENUS" colour="#f0f255">
+        <category name="Context MENUS" colour="#f0f255">
         <label text="Event" web-class="boldtext"></label>
         <block type="on_menu"></block>
         <label text="Stuff" web-class="boldtext"></label>
@@ -692,7 +695,7 @@ export default (Blockly) => {
             <block type="s4d_create_queue"></block>
             <block type="s4d_connect"></block>
         </category>
-        <category name="{{ TOOLBOX_EDITED }}" colour="#e85a66">
+        <category name="Edited" colour="#e85a66">
         <label text="%{BKY_T_EDI}" web-class="boldtext"></label>
         <block type="when_message_is_edited"></block>
         <block type="s4d_replys"></block>
@@ -704,7 +707,7 @@ export default (Blockly) => {
         <block type="s4d_newmsg_del"></block>
         <block type="newmsg_timestamp"></block>
         </category>
-        <category name="MRREDO Register" colour="#65700c">
+        <category name="Register" colour="#65700c">
         <label text="Register slash commands" web-class="boldtext"></label>
         <block type="guild_s"></block>
         <block type="guild_g"></block>
@@ -715,7 +718,7 @@ export default (Blockly) => {
         <label text="comma used for multiple slash commands in 1 variabel" web-class="boldtext"></label> 
         <block type="comma"></block>
         </category>
-        <category name="{{ TOOLBOX_SLASH }}" colour="#ff2f00">
+        <category name="Slash" colour="#ff2f00">
         <label text="%{BKY_T_RS}"></label>
         <block type="on_slash"></block>
         <block type="interaction_name"></block>
@@ -730,7 +733,7 @@ export default (Blockly) => {
         <block type="slash_edit"></block>
         <block type="send_m_embed_string"></block>
         </category>
-        <category name="{{ TOOLBOX_E_M_EMBED }}" colour="#40BF4A">
+        <category name="Embed 2" colour="#40BF4A">
         <label text="Create A Perfect Embed" web-class="boldtext"></label>
             <block type="s4d_m_create_embed_then"></block>
             <label text="%{BKY_COLOR_MESSAGE}"></label>
@@ -749,6 +752,29 @@ export default (Blockly) => {
             <label text="%{BKY_SEND_EMBED}"></label>
             <block type="s4d_m_create_embed_then_send"></block>
     </category>
+        <sep />
+        <category name="Emoji" colour="#FFFF00">
+                <label text="Create an Emoji using a url" web-class="boldtext"></label>
+        <block type="s4d_emoji_create"></block>
+        <block type="s4d_emoji_delete"></block>
+        </category>
+<category name="Thread" colour="#FFFF00">
+<block type="s4d_thread_create"></block>
+<block type="s4d_thread_delete"></block>
+</category>
+<category name="Invite" colour="#FFFF00">
+<block type="s4d_on_cinvite"></block>
+<block type="s4d_on_dinvite"></block>
+<label text="Stuff about invite" web-class="boldtext"></label>
+<block type="s4d_inv_chnl"></block>
+<block type="inv_uses"></block>
+<block type="inv_url"></block>
+<block type="inv_code"></block>
+<block type="s4d_inv_date"></block>
+<block type="s4d_inv_chnls"></block>
+<block type="s4d_inviter"></block>
+<block type="s4d_inv_max"></block>
+</category>
         <sep />
         <category name="{{ TOOLBOX_SERVER }}" colour="#D85E47">
             <label text="%{BKY_FIND_SERVER}"></label>
@@ -801,10 +827,12 @@ export default (Blockly) => {
 
             <label text="%{BKY_CHANNEL_ACTIONS}"></label>
             <block type="slowmode"></block>
+<block type="s4d_set_category"></block>
             <block type="set_perms"></block>
             <block type="set_perms_parent"></block>
             <block type="s4d_create_channel"></block>
             <block type="s4d_delete_channel"></block>
+<label text="%{BKY_CHANNEL_CDU}"></label>
         </category>
         <category name="{{ TOOLBOX_ROLES }}" colour="#2EB66B">
             <label text="%{BKY_FIND_ROLE}"></label>
@@ -830,9 +858,11 @@ export default (Blockly) => {
             <block type="s4d_member_tag"></block>
             <block type="s4d_member_username"></block>
             <block type="s4d_member_icon"></block>
+            <block type="s4d_member_status"></block>
             <block type="s4d_joined_at"></block>
             <block type="s4d_created_at"></block>
             <block type="s4d_member_has_permission"></block>
+<block type="s4d_member_perms"></block>
             <block type="s4d_member_is_bot"></block>
             <label text="%{BKY_LABEL_MEMBER_ACTIONS}"></label>
             <block type="s4d_kick_member"></block>

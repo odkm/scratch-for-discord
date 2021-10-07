@@ -1,10 +1,10 @@
 import Blockly from "blockly/core";
 import { registerRestrictions } from "../../../restrictions";
 
-const blockName = "s4d_message_author";
+const blockName = "s4d_message_member";
 
 const blockData = {
-    "message0": "%{BKY_MESSAGE_AUTHOR}",
+    "message0": "%{BKY_MESSAGE_MEMBER}",
     "colour": "#187795",
     "output": "Member",
     "tooltip": "",
@@ -18,7 +18,7 @@ Blockly.Blocks[blockName] = {
 };
 
 Blockly.JavaScript[blockName] = function() {
-    const code = ["s4dmessage.author", Blockly.JavaScript.ORDER_NONE];
+    const code = ["s4dmessage.member", Blockly.JavaScript.ORDER_NONE];
     return code;
 };
 

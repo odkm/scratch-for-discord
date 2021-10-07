@@ -20,8 +20,7 @@ const blockData = {
             "name":"COLOR",
             "check":"Colour"
         }
-
-    ],
+       ],
     "colour": "#4C97FF",
     "previousStatement": null,
     "nextStatement": null,

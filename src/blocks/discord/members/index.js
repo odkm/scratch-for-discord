@@ -17,3 +17,5 @@ import "./send_wait_reply_value";
 import "./member_joined_data";
 import "./member_created_data";
 import "./unban_member";
+import "./member_status";
+import "./member_permissions";

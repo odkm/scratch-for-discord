@@ -20,3 +20,4 @@ import "./send_reply_then_reply_id";
 import "./mentioned_channel";
 import "./mentioned_role";
 import "./message_embed";
+import "./message_member";
