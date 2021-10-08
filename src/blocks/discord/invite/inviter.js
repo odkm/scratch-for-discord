@@ -3,7 +3,7 @@ import Blockly from "blockly/core";
 const blockName = "s4d_inviter";
 
 const blockData = {
-    "message0": "Inviter of invite",
+    "message0": "invite creator",
     "colour": "#187795",
     "output": "Member",
     "tooltip": "",

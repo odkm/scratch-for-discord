@@ -1,7 +1,6 @@
 export default (Blockly) => {
     return (`
     <xml xmlns="https://developers.google.com/blockly/xml" id="toolbox" style="display: none">
-            <category name="Useful" colour="#FFFF00">
         <category name="{{ TOOLBOX_LOGIC }}" colour="#5b80a5">
             <block type="controls_if" />
             <block type="logic_compare">
@@ -392,9 +391,7 @@ export default (Blockly) => {
                 </value>
             </block>
         </category>
-        </category>
         <sep />
-                <category name="Others" colour="#FFFF00">
         <category name="{{ TOOLBOX_VARIABLES }}" colour="#a55b80" custom="VARIABLE" />
         <category name="{{ TOOLBOX_FUNCTIONS }}" colour="#995ba5" custom="PROCEDURE" />
         <category name="{{ TOOLBOX_OTHER }}" colour="#D14081"> 
@@ -411,7 +408,6 @@ export default (Blockly) => {
             <block type="s4d_try_and_catch"></block>
             <block type="s4d_return"></block>
             <block type="s4d_string_to_number"></block>
-        </category>
         </category>
         <sep />
         <category name="{{ TOOLBOX_BASE }}" colour="#F46580">
@@ -505,23 +501,7 @@ export default (Blockly) => {
         </category> 
 
 
-        <category name="{{ EMBED }}" colour="#40BF4A">
-        <label text="Create A Perfect Embed" web-class="boldtext"></label>
-            <block type="s4d_create_embed_then"></block>
-            <label text="%{BKY_COLOR_MESSAGE}"></label>
-            <block type="s4d_create_embed_then_set_color"></block>
-            <block type="s4d_create_embed_then_set_author"></block>
-            <block type="s4d_create_embed_then_set_title"></block>
-            <block type="s4d_create_embed_then_set_thumbnail"></block>
-            <label text="%{BKY_HYPERLINK_MESSAGE}"></label>
-            <label text="%{BKY_HYPERLINK_MESSAGE_2}"></label>
-            <block type="s4d_create_embed_then_set_description"></block>
-            <block type="s4d_create_embed_then_add_field"></block>
-            <block type="s4d_create_embed_then_set_image"></block>
-            <block type="s4d_create_embed_then_set_footer"></block> 
-            <label text="%{BKY_SEND_EMBED}"></label>
-            <block type="s4d_create_embed_then_send"></block>
-    </category>
+
         <category name="{{ TOOLBOX_E_JOINS }}" colour="#EABB11">
             <label text="%{BKY_JOINS_RELATED_BLOCKS}" web-class="boldtext"></label>
             <label text="%{BKY_DETECT_JOINS}"></label>
@@ -553,211 +533,13 @@ export default (Blockly) => {
             <block type="s4d_react_emoji"></block>
             <block type="s4d_react_member"></block>
         </category>
-        <category name="{{ TOOLBOX_E_DELETED }}" colour="#d96e26">
-           <label text="%{BKY_DELETED_RELATED_BLOCKS}" web-class="boldtext"></label>
-           <label text="%{BKY_DELETED_EVENT}"></label>
-           <block type="s4d_on_deleted"></block>
-           <label text="%{BKY_MESSAGE_INFORMATIONS}"></label>
-           <block type="s4d_message_content_deleted"></block>
-           <block type="s4d_message_server_deleted"></block>
-           <block type="s4d_message_channel_deleted"></block>
-           <block type="s4d_message_author_deleted"></block>
-        </category>
-        <category name="{{ TOOLBLOX_E_ADDED }}" colour="#0000cc">
-        <label text="%{BKY_ADDED_RELATED_BLOCKS}" web-class="boldtext"></label>
-        <label text="%{BKY_DETECT_ADDED}"></label>
-        <block type="s4d_on_added"></block>
-        <label text="%{BKY_ADDED_INFORMATIONS}"></label>
-        <block type="s4d_add_server_id"></block> 
-        <block type="s4d_add_server_name"></block>
-        <block type="s4d_add_server_icon"></block>
-        <block type="s4d_add_server_owner"/>
-        </category>
-        <category name="{{ TOOLBOX_BUTTON }}" colour="#059CA1">
-            <label text="%{BKY_BUTTON_EVENT}"></label>
-            <block type="s4d_on_click"></block>
-            <label text="%{BKY_BUTTON_EVENT_BLOCKS}"></label>
-            <block type="s4d_button_click_id"></block>
-            <block type="s4d_button_think"></block>
-            <block type="s4d_button_reply"></block>
-            <block type="s4d_button_edit"></block>
-            <block type="s4d_button_delete_reply"></block>
-            <block type="s4d_update"></block>
-            <label text="%{BKY_BUTTON_BLOCKS}"></label>
-            <block type="s4d_send_button"></block>
-            <block type="s4d_button_style"></block>
-            <block type="s4d_button_row"></block>
-            <block type="s4d_message_row_block"></block>
-      <label text="%{BKY_T_BS}"></label>
-        <block type="button_id"></block>
-        <block type="button_author"></block>
-        <block type="button_channel"></block>
-        <block type="button_guild"></block>
-        <block type="b_style"></block>
-        <label text="%{BKY_T_B_SHIP}Reply and edit and send embed"></label>
-        <block type="b_send_msg"></block>
-        <block type="button_reply"></block>
-        <block type="button_edit"></block>
-        <block type="send_m_embed_string"></block>
-        <label text="%{BKY_T_CB}"></label>
-        <block type="b_create">
-                    <value name="B_NAME">
-                        <shadow type="text">
-                            <field name="TEXT">button_name</field>
-                        </shadow>
-                    </value>
-                </block>
-        <label text="%{BKY_T_BR}"></label>
-        <block type="b_row">
-                    <value name="BUTTON_NAME">
-                        <shadow type="text">
-                            <field name="TEXT">name</field>
-                        </shadow>
-                    </value>
-                </block>
-        <block type="b_row_comp">
-                <value name="BUTTON">
-                    <shadow type="text">
-                        <field name="TEXT"></field>
-                    </shadow>
-                </value>
-            </block>
-        </category>
-        <category name="{{ TOOLBOX_MENU }}" colour="#059CA1">
-            <label text="%{BKY_BUTTON_EVENT}"></label>
-            <block type="s4d_on_menu_click"></block>
-            <label text="%{BKY_BUTTON_EVENT_BLOCKS}"></label>
-            <block type="s4d_menu_value"></block>
-            <block type="s4d_menu_click_id"></block>
-            <block type="s4d_menu_reply"></block>
-            <block type="s4d_button_think"></block>
-            <block type="s4d_button_edit"></block>
-            <block type="s4d_button_delete_reply"></block>
-            <block type="s4d_update"></block>
-            <label text="%{BKY_BUTTON_BLOCKS}"></label>
-            <block type="s4d_button_menu"></block>
-            <block type="s4d_message_menu_block"></block>
-        </category>
-        <category name="Context MENUS" colour="#f0f255">
-        <label text="Event" web-class="boldtext"></label>
-        <block type="on_menu"></block>
-        <label text="Stuff" web-class="boldtext"></label>
-        <block type="m_name"></block>
-        <block type="m_member"></block>
-        <block type="m_channel"></block>
-        <block type="m_guild"></block>
-        <block type="c_options"></block>
-        <label text="Reply and Edit" web-class="boldtext"></label>
-        <block type="m_reply"></block>
-        <block type="m_edit"></block>
-        <label text="send embed" web-class="boldtext"></label>
-        <block type="send_m_embed_string"></block>
-        </category>
-        <category name="{{ TOOLBOX_WEBHOOK }}" colour="#f5dfa2">
-            <block type="s4d_create_webhook_then"></block>
-            <block type="s4d_edit_webhook"></block>
-            <block type="s4d_webhook_id"></block>
-            <block type="s4d_webhook_token"></block>
-            <block type="s4d_get_webhook_then"></block>
-            <block type="s4d_get_edit_webhook"></block>
-            <block type="s4d_send_webhook"></block>
-        </category>
-        <category name="{{ TOOLBOX_MUSIC }}" colour="#009966">
-            <label text="%{BKY_MUSIC_EVENT}"></label>
-            <block type="s4d_track_playing"></block>
-            <block type="s4d_track_added"></block>
-            <block type="s4d_queue_finished"></block>
-            <label text="%{BKY_MUSIC_INFO}"></label>
-            <block type="s4d_track_name"></block>
-            <block type="s4d_track_channel"></block>
-            <block type="s4d_track_url"></block>
-            <block type="s4d_track_author"></block>
-            <block type="s4d_track_thumbnail"></block>
-            <block type="s4d_track_views"></block>
-            <block type="s4d_track_duration"></block>
-            <label text="%{BKY_MUSIC_BLOCKS}"></label>
-            <block type="s4d_bot_voice_channel"></block>
-            <block type="s4d_voice_channel"></block>
-            <block type="s4d_voice_channel_id"></block>
-            <block type="s4d_get_queue"></block>
-            <block type="s4d_playing"></block>
-            <block type="s4d_current_track"></block>
-            <block type="s4d_connected"></block>
-            <block type="s4d_search"></block>
-            <block type="s4d_loop"></block>
-            <block type="s4d_volume"></block>
-            <block type="s4d_back"></block>
-            <block type="s4d_resume"></block>
-            <block type="s4d_pause"></block>
-            <block type="s4d_stop"></block>
-            <block type="s4d_skip"></block>
-            <block type="s4d_play"></block>
-            <block type="s4d_create_queue"></block>
-            <block type="s4d_connect"></block>
-        </category>
-        <category name="Edited" colour="#e85a66">
-        <label text="%{BKY_T_EDI}" web-class="boldtext"></label>
-        <block type="when_message_is_edited"></block>
-        <block type="s4d_replys"></block>
-        <label text="%{BKY_T_NMS}" web-class="boldtext"></label>
-        <block type="newmsg_channel"></block>
-        <block type="new_message_server"></block>
-        <block type="s4d_newmessage_content"></block>
-        <block type="newmsg_member"></block>
-        <block type="s4d_newmsg_del"></block>
-        <block type="newmsg_timestamp"></block>
-        </category>
-        <category name="Register" colour="#65700c">
-        <label text="Register slash commands" web-class="boldtext"></label>
-        <block type="guild_s"></block>
-        <block type="guild_g"></block>
-        <label text="Make slash commands" web-class="boldtext"></label>
-        <block type="register_var"></block>
-        <label text="Register context menu" web-class="boldtext"></label>
-        <block type="register_c_m"></block>
-        <label text="comma used for multiple slash commands in 1 variabel" web-class="boldtext"></label> 
-        <block type="comma"></block>
-        </category>
-        <category name="Slash" colour="#ff2f00">
-        <label text="%{BKY_T_RS}"></label>
-        <block type="on_slash"></block>
-        <block type="interaction_name"></block>
-        <block type="options"></block>
-        <block type="interaction_author"></block>
-        <block type="interaction_channel"></block>
-        <block type="interaction_guild"></block>
-        <block type="interaction_voice_channel"></block>
-        <block type="interaction_voice_channel_id"></block>
-        <block type="bot_voice_channel_id"></block>
-        <block type="slash_reply"></block>
-        <block type="slash_edit"></block>
-        <block type="send_m_embed_string"></block>
-        </category>
-        <category name="Embed 2" colour="#40BF4A">
-        <label text="Create A Perfect Embed" web-class="boldtext"></label>
-            <block type="s4d_m_create_embed_then"></block>
-            <label text="%{BKY_COLOR_MESSAGE}"></label>
-            <block type="s4d_m_create_embed_then_set_color"></block>
-            <block type="s4d_m_create_embed_then_set_author"></block>
-            <block type="s4d_m_create_embed_then_set_title"></block>
-            <block type="s4d_m_create_embed_then_set_thumbnail"></block>
-            <label text="%{BKY_HYPERLINK_MESSAGE}"></label>
-            <label text="%{BKY_HYPERLINK_MESSAGE_2}"></label>
-            <block type="s4d_m_create_embed_then_set_description"></block>
-            <block type="s4d_m_create_embed_then_add_field"></block>
-            <block type="s4d_m_create_embed_then_add_blankfield"></block>
-            <block type="s4d_m_create_embed_then_set_image"></block>
-            <block type="s4d_m_create_embed_then_set_footer"></block> 
-            <block type="s4d_m_create_embed_then_set_time"></block>
-            <label text="%{BKY_SEND_EMBED}"></label>
-            <block type="s4d_m_create_embed_then_send"></block>
-    </category>
-        <sep />
+<sep />
         <category name="Emoji" colour="#FFFF00">
                 <label text="Create an Emoji using a url" web-class="boldtext"></label>
         <block type="s4d_emoji_create"></block>
         <block type="s4d_emoji_delete"></block>
         </category>
+
 <category name="Thread" colour="#FFFF00">
 <block type="s4d_thread_create"></block>
 <block type="s4d_thread_delete"></block>
@@ -937,99 +719,6 @@ export default (Blockly) => {
                 </value>
             </block>
         </category>
-        <category name="Mongo" colour="#0db550">
-        <label text="connect to MongoDB"></label>
-        <block type="mongo_on"></block>
-        <block type="mongo_connect">
-        <value name="URL">
-        <shadow type="text">
-            <field name="TEXT">mongodb url</field>
-        </shadow>
-    </value>
-        </block>
-        <label text="nerd blocks"></label>
-        <block type="mongo_get_data">
-            <value name="KEY">
-                <shadow type="text">
-                    <field name="TEXT">hello</field>
-                </shadow>
-            </value>
-        </block>
-        <block type="mongo_has_data">
-            <value name="KEY">
-                <shadow type="text">
-                    <field name="TEXT">hello</field>
-                </shadow>
-            </value>
-        </block>
-        <block type="mongo_set_data">
-            <value name="KEY">
-                <shadow type="text">
-                    <field name="TEXT">hello</field>
-                </shadow>
-            </value>
-            <value name="VALUE">
-                <shadow type="text">
-                    <field name="TEXT">world</field>
-                </shadow>
-            </value>
-        </block>
-        <block type="mongo_push_data">
-        <value name="KEY">
-            <shadow type="text">
-                <field name="TEXT">hello</field>
-            </shadow>
-        </value>
-        <value name="VALUE">
-            <shadow type="text">
-                <field name="TEXT">world</field>
-            </shadow>
-        </value>
-    </block>
-    <block type="mongo_pull_data">
-    <value name="KEY">
-        <shadow type="text">
-            <field name="TEXT">hello</field>
-        </shadow>
-    </value>
-    <value name="VALUE">
-        <shadow type="text">
-            <field name="TEXT">world</field>
-        </shadow>
-    </value>
-</block>
-        <block type="mongo_delete_data">
-            <value name="KEY">
-                <shadow type="text">
-                    <field name="TEXT">hello</field>
-                </shadow>
-            </value>
-        </block>
-        <block type="mongo_add_data">
-            <value name="COUNT">
-                <shadow type="math_number">
-                    <field name="NUM">1</field>
-                </shadow>
-            </value>
-            <value name="KEY">
-                <shadow type="text">
-                    <field name="TEXT">points</field>
-                </shadow>
-            </value>
-        </block>
-        <block type="mongo_subtract_data">
-            <value name="COUNT">
-                <shadow type="math_number">
-                    <field name="NUM">1</field>
-                </shadow>
-            </value>
-            <value name="KEY">
-                <shadow type="text">
-                    <field name="TEXT">points</field>
-                </shadow>
-            </value>
-        </block>
-    </category>
     </xml>
 `.replace(/{{\s([A-z]{3,})\s}}/g, (x) => {
     return Blockly.Msg[x.replace("{{ ", "").replace(" }}", "")];
