@@ -49,6 +49,7 @@ import "./blocks/other/";
 import "./blocks/discord/emoji";
 import "./blocks/discord/thread";
 import "./blocks/discord/invite";
+import "./blocks/discord/typing";
 import "./prompt";
 
 import Theme from '@blockly/theme-modern';

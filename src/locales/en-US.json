@@ -1,6 +1,7 @@
 {
   "ID":"id",  
   "INV_CHNL":"invite channel",
+  "ON_STYPING":"When typing starts",
   "ON_INVITE_C":"When an invite is created",
   "ON_INVITE_D":"When an invite is deleted",
   "MEMBER_PERMS":"%1 permissions",

@@ -549,6 +549,7 @@ export default (Blockly) => {
 <block type="s4d_on_dinvite"></block>
 <label text="Stuff about invite" web-class="boldtext"></label>
 <block type="s4d_inv_chnl"></block>
+<block type="s4d_inv_guild"></block>
 <block type="inv_uses"></block>
 <block type="inv_url"></block>
 <block type="inv_code"></block>
@@ -556,6 +557,14 @@ export default (Blockly) => {
 <block type="s4d_inv_chnls"></block>
 <block type="s4d_inviter"></block>
 <block type="s4d_inv_max"></block>
+</category>
+<category name="Typing" colour="#FFFF00">
+<block type="s4d_on_styping"></block>
+<block type="s4d_type_chnls"></block>
+<block type="s4d_type_chnl"></block>
+<block type="s4d_type_guild"></block>
+<block type="s4d_type_time"></block>
+<block type="s4d_type_who"></block>
 </category>
         <sep />
         <category name="{{ TOOLBOX_SERVER }}" colour="#D85E47">

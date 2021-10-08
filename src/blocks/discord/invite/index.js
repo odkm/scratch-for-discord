@@ -9,3 +9,4 @@ import "./inv_max";
 import "./uses";
 import "./url";
 import "./inv_temp";
+import "./inv_guild";
