@@ -3,7 +3,7 @@ import Blockly from "blockly/core";
 const blockName = "s4d_set_role_perm";
 
 const blockData = {
-    "message0": "%{BKY_SET_ROLE_PERM}",
+    "message0": "%1",
     "args0": [
         {
             "type": "field_dropdown",
@@ -134,15 +134,9 @@ const blockData = {
                     "MANAGE_EMOJIS"
                 ]
             ] 
-        },
-        {
-            "type": "input_value",
-            "name": "ROLE",
-            "check": [ "String", "Role" ]
-        },
+        }
     ], 
-    "previousStatement": null,
-    "nextStatement": null,
+    "output":"String",
     "colour": "#4C97FF",
     "tooltip": "",
     "helpUrl": ""
@@ -156,7 +150,6 @@ Blockly.Blocks[blockName] = {
 
 Blockly.JavaScript[blockName] = function(block) {
     const PERM   = block.getFieldValue("PERM");
-    const role = Blockly.JavaScript.valueToCode(block, "ROLE", Blockly.JavaScript.ORDER_ATOMIC);
-    const code = `${role}.setPermissions(['${PERM}']);\n`;
-    return code
+    const code = `'${PERM}'\n`;
+    return code;
 };
