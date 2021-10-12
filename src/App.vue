@@ -50,6 +50,7 @@ import "./blocks/discord/emoji";
 import "./blocks/discord/thread";
 import "./blocks/discord/invite";
 import "./blocks/discord/typing";
+import "./blocks/discord/user-update";
 import "./prompt";
 
 import Theme from '@blockly/theme-modern';

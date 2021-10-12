@@ -566,6 +566,12 @@ export default (Blockly) => {
 <block type="s4d_type_time"></block>
 <block type="s4d_type_who"></block>
 </category>
+<category name="User" colour="#FFFF00">
+<block type="when_user_update">
+</block>
+<block type="newupdate_member"></block>
+<block type="s4d_newuser"></block>
+</category>
         <sep />
         <category name="{{ TOOLBOX_SERVER }}" colour="#D85E47">
             <label text="%{BKY_FIND_SERVER}"></label>
@@ -586,7 +592,8 @@ export default (Blockly) => {
             <block type="s4d_set_server_name"></block>
         </category>
         <category name="{{ TOOLBOX_CHANNELS }}" colour="#a55b80">
-            <label text="%{BKY_FIND_CHANNEL}"></label>
+           
+<label text="%{BKY_FIND_CHANNEL}"></label>
             <block type="s4d_get_channel"></block>
             <block type="s4d_get_all_channel"></block>
             <block type="s4d_get_all_channel_channel"></block>
