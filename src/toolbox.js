@@ -423,6 +423,7 @@ export default (Blockly) => {
             <block type="s4d_on_connected"></block>
             <label text="%{BKY_BOT_INFORMATIONS}"></label>
             <block type="s4d_bot_ping"></block>
+            <block type="s4d_bot_token"></block>
             <block type="s4d_bot_server_count"></block>
             <block type="s4d_get_bot"></block>
             <label text="%{BKY_BOT_ACTIONS}"></label>

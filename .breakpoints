@@ -1,5 +1,13 @@
 {
   "files": {
+    "README.md": [
+      {
+        "id": "3511505b-44f9-497e-b216-7b989b680b76",
+        "line": 3,
+        "version": 1,
+        "index": 66
+      }
+    ],
     "src/blocks/discord/Channel/index.js": [
       {
         "id": "f769ea89-0c91-4ad1-a911-1139472dd018",
